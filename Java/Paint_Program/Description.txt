@@ -1,0 +1,4 @@
+In this Java project, I made a simple paint program. Here are some of the functionalities:
+1. Features: Clear/Fill/Erase
+2. You can push a button for a random color that you can use when you are drawing.
+3. Selecting your own color from hex value or RGB value that you can enter.
