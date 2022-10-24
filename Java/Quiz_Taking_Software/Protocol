@@ -1,0 +1,85 @@
+For user authentication
+c: login <Username> <Password>
+s: success / failure
+
+Creating account
+c: create-account <Username> <Password> <typeOfAccount>
+s: success / duplicate
+
+Creating course
+c: create-course <Course-name> <Course-Number>
+s: success / duplicate
+
+Accessing account courses
+c: get-courses
+s: <Course Object>
+
+Creating quiz
+c: create-quiz <Quiz quiz>
+s: success / duplicate
+
+Importing quiz from file
+c: import-quiz-file <File f>
+s: success / duplicate
+
+Adding question to quiz
+c: add-question-to-quiz <Question question>
+s: N/A
+
+Setting active question
+c: set-active-question <int questionNumber>
+s: N/A
+
+Update question
+c: update-question <Question question>
+s: N/A
+
+Submit submission
+c: submit-submission <Submission submission>
+s: N/A
+
+Set active submission
+c: set-active-submission <int submissionNumber>
+s: N/A
+
+Set active course
+c: set-active-course <int courseChosen>
+s: N/A
+
+Set active quiz
+c: set-active-quiz <int quizNumber>
+s: N/A
+
+Get questions
+c: get-questions
+s: ArrayList<Question> questionList
+
+Get all submissions
+c: get-all-submissions
+s: ArrayList<Submission> submissionList
+
+Get all courses
+c: get-all-courses
+s: ArrayList<Course> courseList
+
+Get quizzes
+c: get-quizzes
+s: ArrayList<Quiz> quizList
+
+Get current quiz
+c: get-current-quiz
+s: Quiz currentQuiz
+
+
+
+
+//this is structure of quiz file
+<Name of Quiz>  <randomized or not>
+<True False>
+<Question> <Answer> <pointValue>
+<Multiple Choice>
+<Question> <pointValue> <numChoices> <answerChoice1> <answerChoice2> <answerChoice3> <answerChoice4> <correctAnswerIndex>
+ <Fill in the Blank>
+ <Question> <Answer> <pointValue>
+ //so on
+
